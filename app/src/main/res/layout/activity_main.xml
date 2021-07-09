@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="opencv.mokadem.ahmed.eyetracker.MainActivity">
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fd_activity_surface_view"/>
+
+    <TextView
+        android:id="@+id/tvBTStaus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fd_activity_surface_view"
+        android:layout_alignParentRight="true"
+        android:text="Disconnected"
+        android:background="@android:color/holo_green_dark"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+</RelativeLayout>
